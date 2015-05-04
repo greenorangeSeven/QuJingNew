@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2930C95A-677E-414B-BEA9-CA624437AD43</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuJing</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5115B2903C8894C1A4B905D023E5F188338A6618</key>
+		<string>https://github.com/greenorangeSeven/WHDLife.git</string>
+		<key>533C8B9F6C84554712C7E7A524312DC93E42439A</key>
+		<string>https://github.com/greenorangeSeven/QuJingTwo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuJing.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5115B2903C8894C1A4B905D023E5F188338A6618</key>
+		<string>../../../XuChang%202</string>
+		<key>533C8B9F6C84554712C7E7A524312DC93E42439A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/greenorangeSeven/QuJingTwo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>533C8B9F6C84554712C7E7A524312DC93E42439A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>533C8B9F6C84554712C7E7A524312DC93E42439A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuJing</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5115B2903C8894C1A4B905D023E5F188338A6618</string>
+			<key>IDESourceControlWCCName</key>
+			<string>XuChang%202</string>
+		</dict>
+	</array>
+</dict>
+</plist>
