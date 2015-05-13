@@ -189,6 +189,7 @@
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
+    backItem.action = @selector(backAction:);
     self.navigationItem.backBarButtonItem = backItem;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
