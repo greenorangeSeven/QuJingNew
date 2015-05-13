@@ -39,7 +39,7 @@
 #define AccessId @"10000001"
 #define AccessKey @"Hr54hiz7"
 
-//#define api_base_url @"http://192.168.1.17:8080/dlife_api/"
+//#define api_base_url @"http://192.168.1.15:8080/qujing_api/"
 #define api_base_url @"http://121.42.14.101:80/qujing_api/"
 
 //查询商家类型列表接口
@@ -299,7 +299,7 @@
 #define createshoppingcar @"create table shoppingcar (id integer primary key autoincrement not null, commodityid text, name text, properyStr text,imagefull text,price text,shopid text,shopname text,number int,user_id text,ischeck text)"
 
 
-#define api_base_urlnotport @"http://112.74.100.243/dlife_api/"
+#define api_base_urlnotport @"http://121.42.14.101/qujing_api/"
 //小区通知详情页面
 #define htm_pushDetailHtm @"app/pushDetail.htm?pushId="                   
 //广告详情页面

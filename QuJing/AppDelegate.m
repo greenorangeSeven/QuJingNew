@@ -67,7 +67,7 @@ BMKMapManager* _mapManager;
     
     // 要使用百度地图，请先启动BaiduMapManager
     _mapManager = [[BMKMapManager alloc]init];
-    BOOL ret = [_mapManager start:@"tycYALGTG5eHMPD1Q2m9xjrp" generalDelegate:self];
+    BOOL ret = [_mapManager start:@"C2rrk96MnTYQZxa67UPz2CjA" generalDelegate:self];
     if (!ret) {
         NSLog(@"manager start failed!");
     }
@@ -79,7 +79,7 @@ BMKMapManager* _mapManager;
 //    [self addSkipBackupAttributeToPath:directory];
     
     //集成信鸽start
-    [XGPush startApp:2200104853 appKey:@"ICV563Z98YXW"];
+    [XGPush startApp:2200105858 appKey:@"ITWE138BR96N"];
     
     //注销之后需要再次注册前的准备
     void (^successCallback)(void) = ^(void){

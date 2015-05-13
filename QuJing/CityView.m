@@ -434,21 +434,6 @@
     return NSDate.date;
 }
 
-#pragma 下载图片
-- (void)startIconDownload:(ImgRecord *)imgRecord forIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *key = [NSString stringWithFormat:@"%d",[indexPath row]];
-    IconDownloader *iconDownloader = [_imageDownloadsInProgress objectForKey:key];
-    if (iconDownloader == nil) {
-        iconDownloader = [[IconDownloader alloc] init];
-        iconDownloader.imgRecord = imgRecord;
-        iconDownloader.index = key;
-        iconDownloader.delegate = self;
-        [_imageDownloadsInProgress setObject:iconDownloader forKey:key];
-        [iconDownloader startDownload];
-    }
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if ([UserModel Instance].isNetworkRunning)
@@ -484,8 +469,8 @@
                 }
             }
             News *news = [newArray objectAtIndex:[indexPath row]];
-            cell.titleLb.text = news.synopsis;
-            cell.summaryLb.text = news.content;
+            cell.titleLb.text = news.infoName;
+            cell.summaryLb.text = news.synopsis;
             if (news.imgUrlFull)
             {
                 [cell.thumImg sd_setImageWithURL:[NSURL URLWithString:news.imgUrlFull]];

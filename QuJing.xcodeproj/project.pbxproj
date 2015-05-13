@@ -3469,8 +3469,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -3490,7 +3490,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "1b4e680f-fb30-419d-83ed-6f71b73fe23f";
+				PROVISIONING_PROFILE = "14b95030-dd3b-4395-9347-a9495b5b6708";
 				SDKROOT = iphoneos8.1;
 			};
 			name = Debug;
@@ -3513,8 +3513,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -3528,7 +3528,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "1b4e680f-fb30-419d-83ed-6f71b73fe23f";
+				PROVISIONING_PROFILE = "14b95030-dd3b-4395-9347-a9495b5b6708";
 				SDKROOT = iphoneos8.1;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3540,8 +3540,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QuJing/IQKeyboardManager",
@@ -3566,7 +3566,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = QuJing;
-				PROVISIONING_PROFILE = "1b4e680f-fb30-419d-83ed-6f71b73fe23f";
+				PROVISIONING_PROFILE = "14b95030-dd3b-4395-9347-a9495b5b6708";
 			};
 			name = Debug;
 		};
@@ -3576,8 +3576,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/QuJing/IQKeyboardManager",
@@ -3602,7 +3602,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = QuJing;
-				PROVISIONING_PROFILE = "1b4e680f-fb30-419d-83ed-6f71b73fe23f";
+				PROVISIONING_PROFILE = "14b95030-dd3b-4395-9347-a9495b5b6708";
 			};
 			name = Release;
 		};
@@ -3610,8 +3610,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -3623,7 +3623,7 @@
 				INFOPLIST_FILE = QuJingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = QuJingTests;
-				PROVISIONING_PROFILE = "1b4e680f-fb30-419d-83ed-6f71b73fe23f";
+				PROVISIONING_PROFILE = "14b95030-dd3b-4395-9347-a9495b5b6708";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuJing.app/QuJing";
 			};
 			name = Debug;
@@ -3632,8 +3632,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zhiliang Zhou (X5YK78R2A4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: WEN XIKE (5ACSFNTTZR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -3641,7 +3641,7 @@
 				INFOPLIST_FILE = QuJingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = QuJingTests;
-				PROVISIONING_PROFILE = "1b4e680f-fb30-419d-83ed-6f71b73fe23f";
+				PROVISIONING_PROFILE = "14b95030-dd3b-4395-9347-a9495b5b6708";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuJing.app/QuJing";
 			};
 			name = Release;
