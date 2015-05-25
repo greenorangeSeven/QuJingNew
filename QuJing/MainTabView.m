@@ -8,10 +8,13 @@
 
 #import "MainTabView.h"
 #import "MainPageView.h"
+#import "MainPageNewView.h"
 #import "InforPageView.h"
+#import "InfoPageNewView.h"
 #import "PropertyPageView.h"
 #import "DiscoveryPageView.h"
 #import "FriendsPageView.h"
+#import "GrouponClassView.h"
 
 @interface MainTabView ()
 {
@@ -46,12 +49,12 @@ static MainTabView *main;
     [_tabC.view setFrame:self.view.frame];
     [self.view addSubview:_tabC.view];
     
-    MainPageView* mainPage = [[MainPageView alloc] init];
+    MainPageNewView* mainPage = [[MainPageNewView alloc] init];
     mainPage.tabBarItem.image = [UIImage imageNamed:@"bar_main"];
     mainPage.tabBarItem.title = @"首页";
     self.mainPageNav = [[UINavigationController alloc] initWithRootViewController:mainPage];
     
-    InforPageView *inforPage = [[InforPageView alloc] init];
+    InfoPageNewView *inforPage = [[InfoPageNewView alloc] init];
     inforPage.tabBarItem.image = [UIImage imageNamed:@"bar_infor"];
     inforPage.tabBarItem.title = @"资讯";
     UINavigationController *inforPageNav = [[UINavigationController alloc] initWithRootViewController:inforPage];
@@ -61,17 +64,23 @@ static MainTabView *main;
     proPage.tabBarItem.title = @"物业";
     UINavigationController *proPageNav = [[UINavigationController alloc] initWithRootViewController:proPage];
     
-    DiscoveryPageView *discoveryPage = [[DiscoveryPageView alloc] init];
-    discoveryPage.tabBarItem.image = [UIImage imageNamed:@"bar_discovery"];
-    discoveryPage.tabBarItem.title = @"发现";
-    UINavigationController *discoveryPageNav = [[UINavigationController alloc] initWithRootViewController:discoveryPage];
+    //    DiscoveryPageView *discoveryPage = [[DiscoveryPageView alloc] init];
+    //    discoveryPage.tabBarItem.image = [UIImage imageNamed:@"bar_discovery"];
+    //    discoveryPage.tabBarItem.title = @"发现";
+    //    UINavigationController *discoveryPageNav = [[UINavigationController alloc] initWithRootViewController:discoveryPage];
+    
+    GrouponClassView *grouponView = [[GrouponClassView alloc] init];
+    grouponView.tabBarItem.image = [UIImage imageNamed:@"bar_discovery"];
+    grouponView.tabBarItem.title = @"商家";
+    UINavigationController *grouponViewNav = [[UINavigationController alloc] initWithRootViewController:grouponView];
+    
     FriendsPageView *friendsPage = [[FriendsPageView alloc] init];
     friendsPage.tabBarItem.image = [UIImage imageNamed:@"bar_circle"];
     friendsPage.tabBarItem.title = @"朋友圈";
     UINavigationController *friendsPageNav = [[UINavigationController alloc] initWithRootViewController:friendsPage];
-    _tabC.viewControllers = @[self.mainPageNav, inforPageNav, proPageNav, discoveryPageNav,friendsPageNav];
+    _tabC.viewControllers = @[self.mainPageNav, inforPageNav, proPageNav, grouponViewNav,friendsPageNav];
     [[_tabC tabBar] setSelectedImageTintColor:[Tool getColorForMain]];
-
+    
 }
 
 - (void)reloadImage
@@ -116,13 +125,13 @@ static MainTabView *main;
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

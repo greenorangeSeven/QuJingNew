@@ -1405,6 +1405,72 @@
     }
 }
 
+//解析交易买卖JSON
++ (NSMutableArray *)readJsonStrToTradeArray:(NSString *)str
+{
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *tradeJsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if ( tradeJsonDic == nil || [tradeJsonDic count] <= 0) {
+        return nil;
+    }
+    NSString *state = [[tradeJsonDic objectForKey:@"header"] objectForKey:@"state"];
+    if ([state isEqualToString:@"0000"] == YES) {
+        NSArray *tradeArrayJson = [[tradeJsonDic objectForKey:@"data"] objectForKey:@"resultsList"];
+        NSMutableArray *tradeArray = [RMMapper mutableArrayOfClass:[Trade class] fromArrayOfDictionary:tradeArrayJson];
+        return tradeArray;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+//解析商家分类JSON
++ (NSMutableArray *)readJsonStrToShopTypeArray:(NSString *)str
+{
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *shopTypeJsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if ( shopTypeJsonDic == nil || [shopTypeJsonDic count] <= 0) {
+        return nil;
+    }
+    NSString *state = [[shopTypeJsonDic objectForKey:@"header"] objectForKey:@"state"];
+    if ([state isEqualToString:@"0000"] == YES) {
+        NSArray *shopTypeArrayJson = [shopTypeJsonDic objectForKey:@"data"];
+        NSMutableArray *shopTypeArray = [RMMapper mutableArrayOfClass:[ShopType class] fromArrayOfDictionary:shopTypeArrayJson];
+        return shopTypeArray;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+//解析商家信息JSON
++ (NSMutableArray *)readJsonStrToShopInfoArray:(NSString *)str
+{
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *shopInfoJsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if ( shopInfoJsonDic == nil || [shopInfoJsonDic count] <= 0) {
+        return nil;
+    }
+    NSString *state = [[shopInfoJsonDic objectForKey:@"header"] objectForKey:@"state"];
+    if ([state isEqualToString:@"0000"] == YES) {
+        NSArray *shopInfoArrayJson = [[shopInfoJsonDic objectForKey:@"data"] objectForKey:@"resultsList"];
+        NSMutableArray *shopInfoArray = [RMMapper mutableArrayOfClass:[ShopInfo class] fromArrayOfDictionary:shopInfoArrayJson];
+        for (ShopInfo *shop in shopInfoArray) {
+            shop.imgUrlFull = [NSString stringWithFormat:@"%@_200", shop.imgUrlFull];
+        }
+        return shopInfoArray;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
 + (NSString *)readOderSubmitVOToJson:(OderSubmitVO *)submit
 {
     //    NSDictionary *orderDic = [self getObjectData:submit];

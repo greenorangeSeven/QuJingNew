@@ -11,6 +11,8 @@
 #import "UIImageView+WebCache.h"
 #import "ActivityInitiateView.h"
 #import "ActivityDetailView.h"
+#import "AppDelegate.h"
+#import "YRSideViewController.h"
 
 @interface ActivityTableView ()
 {
@@ -34,11 +36,11 @@
     titleLabel.textAlignment = UITextAlignmentCenter;
     self.navigationItem.titleView = titleLabel;
     
-    UIButton *rBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 21, 19)];
-    [rBtn addTarget:self action:@selector(initiateAction:) forControlEvents:UIControlEventTouchUpInside];
-    [rBtn setImage:[UIImage imageNamed:@"activity_add"] forState:UIControlStateNormal];
-    UIBarButtonItem *btnTel = [[UIBarButtonItem alloc]initWithCustomView:rBtn];
-    self.navigationItem.rightBarButtonItem = btnTel;
+//    UIButton *rBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 21, 19)];
+//    [rBtn addTarget:self action:@selector(initiateAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [rBtn setImage:[UIImage imageNamed:@"activity_add"] forState:UIControlStateNormal];
+//    UIBarButtonItem *btnTel = [[UIBarButtonItem alloc]initWithCustomView:rBtn];
+//    self.navigationItem.rightBarButtonItem = btnTel;
     
     self.tableView.tableHeaderView = self.headerView;
     self.tableView.dataSource = self;
@@ -400,6 +402,10 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
+
+    AppDelegate *delegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
+    YRSideViewController *sideViewController=[delegate sideViewController];
+    [sideViewController setNeedSwipeShowMenu:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -413,8 +419,6 @@
     [self.item1Btn setBackgroundImage:[UIImage imageNamed:@"activity_tab_bg"] forState:UIControlStateNormal];
     [self.item2Btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.item2Btn setBackgroundImage:nil forState:UIControlStateNormal];
-    [self.item3btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.item3btn setBackgroundImage:nil forState:UIControlStateNormal];
     findType = @"news";
     isLoadOver = NO;
     [self reload:NO];
@@ -425,22 +429,9 @@
     [self.item1Btn setBackgroundImage:nil forState:UIControlStateNormal];
     [self.item2Btn setTitleColor:[Tool getColorForMain] forState:UIControlStateNormal];
     [self.item2Btn setBackgroundImage:[UIImage imageNamed:@"activity_tab_bg"] forState:UIControlStateNormal];
-    [self.item3btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.item3btn setBackgroundImage:nil forState:UIControlStateNormal];
     findType = @"myJoin";
     isLoadOver = NO;
     [self reload:NO];
 }
 
-- (IBAction)item3Action:(id)sender {
-    [self.item1Btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.item1Btn setBackgroundImage:nil forState:UIControlStateNormal];
-    [self.item2Btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.item2Btn setBackgroundImage:nil forState:UIControlStateNormal];
-    [self.item3btn setTitleColor:[Tool getColorForMain] forState:UIControlStateNormal];
-    [self.item3btn setBackgroundImage:[UIImage imageNamed:@"activity_tab_bg"] forState:UIControlStateNormal];
-    findType = @"myInitiate";
-    isLoadOver = NO;
-    [self reload:NO];
-}
 @end

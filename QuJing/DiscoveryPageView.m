@@ -15,6 +15,8 @@
 #import "ErrorView.h"
 #import "GrouponClassView.h"
 #import "CityView.h"
+#import "AppDelegate.h"
+#import "YRSideViewController.h"
 
 @interface DiscoveryPageView ()
 
@@ -72,7 +74,6 @@
 //团购信息
 - (IBAction)tuanAction:(id)sender
 {
-    
     GrouponClassView *grouponView = [[GrouponClassView alloc] init];
     grouponView.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:grouponView animated:YES];

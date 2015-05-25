@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivityTableView">
@@ -11,7 +11,6 @@
                 <outlet property="headerView" destination="f1q-TY-L3z" id="8Sn-ky-jAD"/>
                 <outlet property="item1Btn" destination="Xbm-po-Cua" id="2JU-fx-w3k"/>
                 <outlet property="item2Btn" destination="LtV-8P-a9T" id="2Qp-M2-RQC"/>
-                <outlet property="item3btn" destination="SF1-Ks-Ftr" id="BL8-jf-aKB"/>
                 <outlet property="tableView" destination="Iyu-uM-oFU" id="7jK-Ee-Obn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -41,14 +40,14 @@
                                         <rect key="frame" x="0.0" y="39" width="320" height="1"/>
                                         <color key="backgroundColor" red="0.47843137250000001" green="0.47843137250000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbm-po-Cua">
-                                        <rect key="frame" x="0.0" y="0.0" width="106" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="最新活动" backgroundImage="activity_tab_bg">
-                                            <color key="titleColor" red="0.88235294119999996" green="0.16862745100000001" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.1529411765" green="0.60784313729999995" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -56,7 +55,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtV-8P-a9T">
-                                        <rect key="frame" x="107" y="0.0" width="106" height="40"/>
+                                        <rect key="frame" x="160" y="0.0" width="160" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="我参与的">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,17 +63,6 @@
                                         </state>
                                         <connections>
                                             <action selector="item2Action:" destination="-1" eventType="touchUpInside" id="fNo-fY-IC2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF1-Ks-Ftr">
-                                        <rect key="frame" x="214" y="0.0" width="106" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="我发起的">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="item3Action:" destination="-1" eventType="touchUpInside" id="ePg-Pz-WIA"/>
                                         </connections>
                                     </button>
                                 </subviews>

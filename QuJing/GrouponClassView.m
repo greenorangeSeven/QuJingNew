@@ -14,6 +14,8 @@
 #import "CommodityDetailView.h"
 #import "UIImageView+WebCache.h"
 #import "ShopType.h"
+#import "AppDelegate.h"
+#import "YRSideViewController.h"
 
 @interface GrouponClassView ()
 
@@ -31,6 +33,9 @@
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.textAlignment = UITextAlignmentCenter;
     self.navigationItem.titleView = titleLabel;
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -74,8 +79,8 @@
                                            if(n > 0)
                                            {
                                                for (int i = 0; i < 3 - n; i++) {
-                                                   CommodityClass *class = [[CommodityClass alloc] init];
-                                                   class.classId = @"-1";
+                                                   ShopType *class = [[ShopType alloc] init];
+                                                   class.shopTypeId = @"-1";
                                                    [classes addObject:class];
                                                }
                                            }
@@ -128,13 +133,18 @@
     }
     int indexRow = [indexPath row];
     ShopType *cate = [classes objectAtIndex:indexRow];
-    
-    
-    cell.classImageIv.hidden = NO;
-    cell.classNameLb.hidden = NO;
-    cell.classNameLb.text = cate.shopTypeName;
-    NSString *imageUrl = [NSString stringWithFormat:@"%@_200", cate.imgUrlFull];
-    [cell.classImageIv sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"loadpic.png"]];
+    if ([cate.shopTypeId isEqualToString:@"-1"]) {
+        cell.classImageIv.hidden = YES;
+        cell.classNameLb.hidden = YES;
+    }
+    else
+    {
+        cell.classImageIv.hidden = NO;
+        cell.classNameLb.hidden = NO;
+        cell.classNameLb.text = cate.shopTypeName;
+        NSString *imageUrl = [NSString stringWithFormat:@"%@_200", cate.imgUrlFull];
+        [cell.classImageIv sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"loadpic.png"]];
+    }
     return cell;
 }
 
@@ -160,8 +170,8 @@
     ShopType *class = [classes objectAtIndex:[indexPath row]];
     if (class)
     {
-        
         GrouponView *grouponView = [[GrouponView alloc] init];
+        grouponView.hidesBottomBarWhenPushed = YES;
         grouponView.shopType = class;
         [self.navigationController pushViewController:grouponView animated:YES];
         
@@ -337,6 +347,10 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
+    
+    AppDelegate *delegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
+    YRSideViewController *sideViewController=[delegate sideViewController];
+    [sideViewController setNeedSwipeShowMenu:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

@@ -53,6 +53,9 @@
 #import "OrderShopVO.h"
 #import "OderSubmitVO.h"
 #import "Jastor.h"
+#import "Trade.h"
+#import "ShopType.h"
+#import "ShopInfo.h"
 
 @interface Tool : NSObject
 
@@ -205,6 +208,12 @@
 + (NSMutableArray *)readJsonStrToFriendsArray:(NSString *)str;
 //解析朋友圈详情JSON
 + (FriendsInfo *)readJsonStrToFriendsInfo:(NSString *)str;
+//解析交易买卖JSON
++ (NSMutableArray *)readJsonStrToTradeArray:(NSString *)str;
+//解析商家分类JSON
++ (NSMutableArray *)readJsonStrToShopTypeArray:(NSString *)str;
+//解析商家信息JSON
++ (NSMutableArray *)readJsonStrToShopInfoArray:(NSString *)str;
 
 //将订单对象转换成json
 + (NSString *)readOderSubmitVOToJson:(OderSubmitVO *)submit;

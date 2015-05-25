@@ -15,6 +15,9 @@
 #import "ActivityDetailView.h"
 #import "CommodityDetailView.h"
 
+#import "AppDelegate.h"
+#import "YRSideViewController.h"
+
 @interface CommodityClassView ()
 
 @end
@@ -26,7 +29,7 @@
     
     UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 44)];
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
-    titleLabel.text = @"精品商城";
+    titleLabel.text = @"全城特价";
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.textAlignment = UITextAlignmentCenter;
@@ -408,6 +411,10 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
+    
+    AppDelegate *delegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
+    YRSideViewController *sideViewController=[delegate sideViewController];
+    [sideViewController setNeedSwipeShowMenu:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

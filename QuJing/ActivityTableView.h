@@ -30,11 +30,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *advIv;
 @property (weak, nonatomic) IBOutlet UIButton *item1Btn;
 @property (weak, nonatomic) IBOutlet UIButton *item2Btn;
-@property (weak, nonatomic) IBOutlet UIButton *item3btn;
 
 - (IBAction)item1Action:(id)sender;
 - (IBAction)item2Action:(id)sender;
-- (IBAction)item3Action:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

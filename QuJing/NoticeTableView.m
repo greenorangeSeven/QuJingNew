@@ -14,6 +14,8 @@
 #import "Notice.h"
 #import "ActivityDetailView.h"
 #import "CommodityDetailView.h"
+#import "AppDelegate.h"
+#import "YRSideViewController.h"
 
 @interface NoticeTableView ()
 {
@@ -460,6 +462,10 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
     backItem.title = @"返回";
     self.navigationItem.backBarButtonItem = backItem;
+
+    AppDelegate *delegate=(AppDelegate*)[[UIApplication sharedApplication]delegate];
+    YRSideViewController *sideViewController=[delegate sideViewController];
+    [sideViewController setNeedSwipeShowMenu:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

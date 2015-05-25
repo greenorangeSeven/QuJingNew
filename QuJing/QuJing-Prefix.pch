@@ -39,8 +39,8 @@
 #define AccessId @"10000001"
 #define AccessKey @"Hr54hiz7"
 
-//#define api_base_url @"http://192.168.1.15:8080/qujing_api/"
-#define api_base_url @"http://121.42.14.101:80/qujing_api/"
+#define api_base_url @"http://192.168.1.105:8080/qujing_api/"
+//#define api_base_url @"http://121.42.14.101:80/qujing_api/"
 
 //查询商家类型列表接口
 #define api_findShopTypeList @"shop/findShopTypeList.htm"
@@ -247,6 +247,16 @@
 //用后感
 #define api_addAfterFell @"suit/addAfterFell.htm"
 
+//分页查询交易数据
+#define api_findBusinessInfoByPage @"business/findBusinessInfoByPage.htm"
+
+//发布交易
+#define api_addBusinessInfoForApp @"business/addBusinessInfoForApp.htm"
+//获取商家分类
+#define api_findShopType @"shop/findShopTypeList.htm"
+//获取商家信息
+#define api_findShopInfoByPage @"shop/findShopInfoByPage.htm"
+
 //订单支付成功状态码
 #define ORDER_PAY_OK @"9000"
 
@@ -286,6 +296,9 @@
 #define ActivityPlaysCellIdentifier @"ActivityPlaysCellIdentifier"
 #define MyOrderCellIdentifier @"MyOrderCellIdentifier"
 #define OrderCommodityCellIdentifier @"OrderCommodityCellIdentifier"
+#define TradeListCellIdentifier @"TradeListCellIdentifier"
+#define LifeReferCellIdentifier @"LifeReferCellIdentifier"
+#define ConvenienceCellIdentifier @"ConvenienceCellIdentifier"
 
 
 #define Notification_RefreshGatherTable @"Notification_RefreshGatherTable"
@@ -298,8 +311,8 @@
 
 #define createshoppingcar @"create table shoppingcar (id integer primary key autoincrement not null, commodityid text, name text, properyStr text,imagefull text,price text,shopid text,shopname text,number int,user_id text,ischeck text)"
 
-
-#define api_base_urlnotport @"http://121.42.14.101/qujing_api/"
+#define api_base_urlnotport @"http://192.168.1.105:8080/qujing_api/"
+//#define api_base_urlnotport @"http://121.42.14.101/qujing_api/"
 //小区通知详情页面
 #define htm_pushDetailHtm @"app/pushDetail.htm?pushId="                   
 //广告详情页面
@@ -320,6 +333,10 @@
 #define htm_help @"app/help.htm"
 //使用条款
 #define htm_regService @"app/regService.htm?accessId="
+//交易详情页面
+#define htm_businessDetail @"app/businessDetail.htm"
+//便民服务页面
+#define htm_shopDetail @"app/shopDetail.htm?shopId="
 
 #define UserInfoCache @"UserInfoCache"
 

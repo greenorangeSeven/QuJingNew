@@ -7,25 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2930C95A-677E-414B-BEA9-CA624437AD43</string>
 	<key>IDESourceControlProjectName</key>
-	<string>QuJing</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5115B2903C8894C1A4B905D023E5F188338A6618</key>
-		<string>https://github.com/greenorangeSeven/WHDLife.git</string>
 		<key>533C8B9F6C84554712C7E7A524312DC93E42439A</key>
-		<string>https://github.com/greenorangeSeven/QuJingTwo.git</string>
+		<string>https://github.com/greenorangeSeven/QuJingNew.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QuJing.xcodeproj</string>
+	<string>QuJing.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5115B2903C8894C1A4B905D023E5F188338A6618</key>
-		<string>../../../XuChang%202</string>
 		<key>533C8B9F6C84554712C7E7A524312DC93E42439A</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/greenorangeSeven/QuJingTwo.git</string>
+	<string>https://github.com/greenorangeSeven/QuJingNew.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -38,15 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>533C8B9F6C84554712C7E7A524312DC93E42439A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>QuJing</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5115B2903C8894C1A4B905D023E5F188338A6618</string>
-			<key>IDESourceControlWCCName</key>
-			<string>XuChang%202</string>
+			<string>QuJingNew</string>
 		</dict>
 	</array>
 </dict>

@@ -18,4 +18,6 @@
 @property (copy, nonatomic) NSString *sort;
 @property (copy, nonatomic) NSString *imgUrlFull;
 
+@property (nonatomic, retain) UIImage *imgData;
+
 @end
