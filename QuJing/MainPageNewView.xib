@@ -44,7 +44,7 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-A1-TOu">
                                     <rect key="frame" x="31" y="136" width="54" height="55"/>
-                                    <state key="normal" image="main_sqhd">
+                                    <state key="normal" image="main_jpts">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
@@ -104,7 +104,7 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGv-0B-n6Z">
                                     <rect key="frame" x="237" y="29" width="54" height="55"/>
-                                    <state key="normal" image="main_jpts">
+                                    <state key="normal" image="main_sqhd">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>

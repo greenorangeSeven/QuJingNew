@@ -12,9 +12,11 @@
 #import "InforPageView.h"
 #import "InfoPageNewView.h"
 #import "PropertyPageView.h"
+#import "PropertyPageNewView.h"
 #import "DiscoveryPageView.h"
 #import "FriendsPageView.h"
 #import "GrouponClassView.h"
+#import "CircleOfFriendsView.h"
 
 @interface MainTabView ()
 {
@@ -59,7 +61,7 @@ static MainTabView *main;
     inforPage.tabBarItem.title = @"资讯";
     UINavigationController *inforPageNav = [[UINavigationController alloc] initWithRootViewController:inforPage];
     
-    PropertyPageView *proPage = [[PropertyPageView alloc] init];
+    PropertyPageNewView *proPage = [[PropertyPageNewView alloc] init];
     proPage.tabBarItem.image = [UIImage imageNamed:@"bar_realestate"];
     proPage.tabBarItem.title = @"物业";
     UINavigationController *proPageNav = [[UINavigationController alloc] initWithRootViewController:proPage];
@@ -71,14 +73,19 @@ static MainTabView *main;
     
     GrouponClassView *grouponView = [[GrouponClassView alloc] init];
     grouponView.tabBarItem.image = [UIImage imageNamed:@"bar_discovery"];
-    grouponView.tabBarItem.title = @"商家";
+    grouponView.tabBarItem.title = @"快送";
     UINavigationController *grouponViewNav = [[UINavigationController alloc] initWithRootViewController:grouponView];
     
-    FriendsPageView *friendsPage = [[FriendsPageView alloc] init];
+    CircleOfFriendsView *friendsPage = [[CircleOfFriendsView alloc] init];
     friendsPage.tabBarItem.image = [UIImage imageNamed:@"bar_circle"];
     friendsPage.tabBarItem.title = @"朋友圈";
+    
+    
+//    FriendsPageView *friendsPage = [[FriendsPageView alloc] init];
+//    friendsPage.tabBarItem.image = [UIImage imageNamed:@"bar_circle"];
+//    friendsPage.tabBarItem.title = @"朋友圈";
     UINavigationController *friendsPageNav = [[UINavigationController alloc] initWithRootViewController:friendsPage];
-    _tabC.viewControllers = @[self.mainPageNav, inforPageNav, proPageNav, grouponViewNav,friendsPageNav];
+    _tabC.viewControllers = @[self.mainPageNav, grouponViewNav, proPageNav, inforPageNav,friendsPageNav];
     [[_tabC tabBar] setSelectedImageTintColor:[Tool getColorForMain]];
     
 }

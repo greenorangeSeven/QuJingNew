@@ -323,7 +323,7 @@
     else
     {
         NSString *orderStr = [json objectForKey:@"msg"];
-        [[AlipaySDK defaultService] payOrder:orderStr fromScheme:@"XuChangLifeAlipay" callback:^(NSDictionary *resultDic)
+        [[AlipaySDK defaultService] payOrder:orderStr fromScheme:@"QuJingLifeAlipay" callback:^(NSDictionary *resultDic)
          {
              NSString *resultState = resultDic[@"resultStatus"];
              if([resultState isEqualToString:ORDER_PAY_OK])

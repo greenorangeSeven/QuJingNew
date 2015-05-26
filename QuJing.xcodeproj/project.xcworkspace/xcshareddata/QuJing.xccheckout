@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2930C95A-677E-414B-BEA9-CA624437AD43</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>QuJing</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>533C8B9F6C84554712C7E7A524312DC93E42439A</key>
 		<string>https://github.com/greenorangeSeven/QuJingNew.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QuJing.xcodeproj/project.xcworkspace</string>
+	<string>QuJing.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>533C8B9F6C84554712C7E7A524312DC93E42439A</key>

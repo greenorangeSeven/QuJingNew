@@ -257,6 +257,21 @@
 //获取商家信息
 #define api_findShopInfoByPage @"shop/findShopInfoByPage.htm"
 
+//获得社区朋友圈（社区朋友圈页面接口）
+#define api_findTopicInfoByPageForApp @"topic/findTopicInfoByPageForApp.htm"
+//社区朋友圈取消点赞
+#define api_delTopicHeart @"topic/delTopicHeart.htm"
+//社区朋友圈点赞
+#define api_addTopicHeart @"topic/addTopicHeart.htm"
+//新增社区朋友圈回复
+#define api_addTopicReply @"topic/addTopicReply.htm"
+//删除社区朋友圈
+#define api_delTopicInfo @"topic/delTopicInfo.htm"
+//获取所有话题类型
+#define api_findAllTopicType @"topic/findAllTopicType.htm"
+//获取朋友圈话题
+#define api_addTopicInfo @"topic/addTopicInfo.htm"
+
 //订单支付成功状态码
 #define ORDER_PAY_OK @"9000"
 
@@ -299,6 +314,11 @@
 #define TradeListCellIdentifier @"TradeListCellIdentifier"
 #define LifeReferCellIdentifier @"LifeReferCellIdentifier"
 #define ConvenienceCellIdentifier @"ConvenienceCellIdentifier"
+#define CircleOfFriendsFullCellIdentifier @"CircleOfFriendsFullCellIdentifier"
+#define CircleOfFriendsReplyCellIdentifier @"CircleOfFriendsReplyCellIdentifier"
+#define CircleOfFriendsImgCellIdentifier @"CircleOfFriendsImgCellIdentifier"
+#define CameraImgCellIdentifier @"CameraImgCellIdentifier"
+
 
 
 #define Notification_RefreshGatherTable @"Notification_RefreshGatherTable"
@@ -306,7 +326,7 @@
 #define Notification_RefreshShopCarTable @"Notification_RefreshShopCarTable"
 #define Notification_CommodityDetailGotoOrder @"Notification_CommodityDetailGotoOrder"
 #define Notification_ShopCarGotoOrder @"Notification_ShopCarGotoOrder"
-
+#define Notification_RefreshTopic @"Notification_RefreshTopic"
 
 
 #define createshoppingcar @"create table shoppingcar (id integer primary key autoincrement not null, commodityid text, name text, properyStr text,imagefull text,price text,shopid text,shopname text,number int,user_id text,ischeck text)"

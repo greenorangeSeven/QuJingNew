@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "CityCell.h"
 #import "CityDetailView.h"
-#import "SGFocusImageFrame.h"
-#import "SGFocusImageItem.h"
 
-@interface InfoPageNewView : UIViewController<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate,MBProgressHUDDelegate,SGFocusImageFrameDelegate>
+@interface InfoPageNewView : UIViewController<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate,MBProgressHUDDelegate>
 {
     BOOL isLoading;
     BOOL isLoadOver;
@@ -28,16 +26,11 @@
     UIWebView *phoneCallWebView;
     
     MBProgressHUD *hud;
-    
-    NSMutableArray *advDatas;
-    SGFocusImageFrame *bannerView;
-    int advIndex;
 }
 
 @property (assign, nonatomic) int typeId;
 @property (copy, nonatomic) NSString *typeName;
 
-@property (weak, nonatomic) IBOutlet UIImageView *advIv;
 @property (weak, nonatomic) IBOutlet UIButton *item1Btn;
 @property (weak, nonatomic) IBOutlet UIButton *item2Btn;
 @property (weak, nonatomic) IBOutlet UIButton *item3Btn;

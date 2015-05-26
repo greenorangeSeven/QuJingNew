@@ -7,6 +7,9 @@
 //
 
 #import "Tool.h"
+#import "TopicFull.h"
+#import "TopicReply.h"
+#import "TopicType.h"
 
 @implementation Tool
 
@@ -1464,6 +1467,153 @@
             shop.imgUrlFull = [NSString stringWithFormat:@"%@_200", shop.imgUrlFull];
         }
         return shopInfoArray;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+//解析社区朋友圈
++ (NSMutableArray *)readJsonStrToTopicArray:(NSString *)str
+{
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *topicJsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if ( topicJsonDic == nil || [topicJsonDic count] <= 0) {
+        return nil;
+    }
+    NSString *state = [[topicJsonDic objectForKey:@"header"] objectForKey:@"state"];
+    if ([state isEqualToString:@"0000"] == YES) {
+        NSArray *topicArrayJson = [[topicJsonDic objectForKey:@"data"] objectForKey:@"resultsList"];
+        NSMutableArray *topicArray = [RMMapper mutableArrayOfClass:[Topic class] fromArrayOfDictionary:topicArrayJson];
+        for (Topic *exp in topicArray) {
+            exp.starttime = [Tool intervalSinceNow:[Tool TimestampToDateStr:[exp.starttimeStamp stringValue] andFormatterStr:@"yyyy-MM-dd HH:mm:ss"]];
+            exp.contentHeight = [self heightForString:exp.content fontSize:14.0 andWidth:236.0];
+            //            exp.contentHeight = [self getTextHeight:236 andUIFont:[UIFont fontWithName:@"Arial-BoldItalicMT" size:14] andText:exp.content];
+            if (exp.contentHeight < 21)
+            {
+                exp.contentHeight = 21;
+            }
+            else
+            {
+                exp.contentHeight += 3;
+            }
+            int imgCount = [exp.imgUrlList count];
+            if (imgCount > 0) {
+                int row = 0;
+                if (imgCount % 3 > 0) {
+                    row = imgCount / 3 + 1;
+                }
+                else
+                {
+                    row = imgCount / 3;
+                }
+                exp.imageViewHeight = 70 * row;
+            }
+            else
+            {
+                exp.imageViewHeight = 0;
+            }
+            
+            if (exp.contentHeight > 30) {
+                exp.viewAddHeight += exp.contentHeight - 21;
+            }
+            if (exp.imageViewHeight > 70) {
+                exp.viewAddHeight += exp.imageViewHeight - 70;
+            }
+        }
+        return topicArray;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+//解析社区朋友圈（带评论）
++ (NSMutableArray *)readJsonStrToTopicFullArray:(NSString *)str
+{
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *topicJsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if ( topicJsonDic == nil || [topicJsonDic count] <= 0) {
+        return nil;
+    }
+    NSString *state = [[topicJsonDic objectForKey:@"header"] objectForKey:@"state"];
+    if ([state isEqualToString:@"0000"] == YES) {
+        NSArray *topicArrayJson = [[topicJsonDic objectForKey:@"data"] objectForKey:@"resultsList"];
+        NSMutableArray *topicArray = [RMMapper mutableArrayOfClass:[TopicFull class] fromArrayOfDictionary:topicArrayJson];
+        for (TopicFull *topic in topicArray) {
+            topic.replyList = [RMMapper mutableArrayOfClass:[TopicReply class] fromArrayOfDictionary:topic.replyList];
+            topic.replyHeight = 0;
+            for(TopicReply *reply in topic.replyList)
+            {
+                reply.replyContent = [NSString stringWithFormat:@"%@：%@",reply.nickName, reply.replyContent];
+                reply.contentHeight = [self heightForString:reply.replyContent fontSize:14.0 andWidth:232.0] + 3;
+                topic.replyHeight += reply.contentHeight;
+                
+                reply.replyContentAttr = [[NSMutableAttributedString alloc] initWithString:reply.replyContent];
+                [reply.replyContentAttr addAttribute:NSForegroundColorAttributeName value:[Tool getColorForMain] range:NSMakeRange(0, [reply.nickName length] + 1)];
+            }
+            
+            topic.starttime = [Tool intervalSinceNow:[Tool TimestampToDateStr:topic.starttimeStamp  andFormatterStr:@"yyyy-MM-dd HH:mm:ss"]];
+            topic.contentHeight = [self heightForString:topic.content fontSize:14.0 andWidth:236.0];
+            
+            if (topic.contentHeight < 21)
+            {
+                topic.contentHeight = 21;
+            }
+            else
+            {
+                topic.contentHeight += 3;
+            }
+            int imgCount = [topic.imgUrlList count];
+            if (imgCount > 0) {
+                int row = 0;
+                if (imgCount % 3 > 0) {
+                    row = imgCount / 3 + 1;
+                }
+                else
+                {
+                    row = imgCount / 3;
+                }
+                topic.imageViewHeight = 70 * row;
+            }
+            else
+            {
+                topic.imageViewHeight = 0;
+            }
+            
+            
+            topic.viewAddHeight += topic.contentHeight;
+            
+            topic.viewAddHeight += topic.imageViewHeight;
+            
+            topic.viewAddHeight += topic.replyHeight;
+        }
+        return topicArray;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+//解析朋友圈类型JSON
++ (NSMutableArray *)readJsonStrToTopicTypeArray:(NSString *)str
+{
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    NSDictionary *typeJsonDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if ( typeJsonDic == nil || [typeJsonDic count] <= 0) {
+        return nil;
+    }
+    NSString *state = [[typeJsonDic objectForKey:@"header"] objectForKey:@"state"];
+    if ([state isEqualToString:@"0000"] == YES) {
+        NSArray *typeArrayJson = [typeJsonDic objectForKey:@"data"];
+        NSMutableArray *typeArray = [RMMapper mutableArrayOfClass:[TopicType class] fromArrayOfDictionary:typeArrayJson];
+        return typeArray;
     }
     else
     {

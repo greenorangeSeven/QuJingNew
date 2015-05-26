@@ -56,6 +56,7 @@
 #import "Trade.h"
 #import "ShopType.h"
 #import "ShopInfo.h"
+#import "Topic.h"
 
 @interface Tool : NSObject
 
@@ -214,6 +215,13 @@
 + (NSMutableArray *)readJsonStrToShopTypeArray:(NSString *)str;
 //解析商家信息JSON
 + (NSMutableArray *)readJsonStrToShopInfoArray:(NSString *)str;
+
+//解析社区朋友圈
++ (NSMutableArray *)readJsonStrToTopicArray:(NSString *)str;
+//解析社区朋友圈（带评论）
++ (NSMutableArray *)readJsonStrToTopicFullArray:(NSString *)str;
+//解析朋友圈类型JSON
++ (NSMutableArray *)readJsonStrToTopicTypeArray:(NSString *)str;
 
 //将订单对象转换成json
 + (NSString *)readOderSubmitVOToJson:(OderSubmitVO *)submit;

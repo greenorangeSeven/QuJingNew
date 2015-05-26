@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoPageNewView">
             <connections>
-                <outlet property="advIv" destination="Jg0-qz-vvD" id="gdH-ZF-e78"/>
                 <outlet property="item1Btn" destination="0dn-vR-RH9" id="uph-mf-YFQ"/>
                 <outlet property="item2Btn" destination="ulA-LL-UQC" id="Bdx-xa-UNQ"/>
                 <outlet property="item3Btn" destination="hcW-M2-zJ8" id="esQ-Gs-khX"/>
@@ -24,18 +23,22 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <view key="tableHeaderView" contentMode="scaleToFill" id="UAB-uQ-O3Q">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jg0-qz-vvD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="157" id="05L-9l-yHm"/>
-                                    <constraint firstAttribute="width" constant="320" id="RWB-UQ-thI"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeH-9Z-VBq">
-                                <rect key="frame" x="0.0" y="157" width="320" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-vR-RH9">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="看曲靖" backgroundImage="activity_tab_bg">
+                                            <color key="titleColor" red="0.1529411765" green="0.60784313729999995" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="item1Action:" destination="-1" eventType="touchUpInside" id="yh7-Td-1pl"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulA-LL-UQC">
                                         <rect key="frame" x="107" y="0.0" width="106" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -65,28 +68,12 @@
                                     <constraint firstAttribute="height" constant="40" id="eHc-bu-4Pa"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-vR-RH9">
-                                <rect key="frame" x="0.0" y="157" width="106" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="看曲靖" backgroundImage="activity_tab_bg">
-                                    <color key="titleColor" red="0.1529411765" green="0.60784313729999995" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="item1Action:" destination="-1" eventType="touchUpInside" id="yh7-Td-1pl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jg0-qz-vvD" firstAttribute="leading" secondItem="UAB-uQ-O3Q" secondAttribute="leading" id="1yN-mL-pYg"/>
                             <constraint firstAttribute="trailing" secondItem="AeH-9Z-VBq" secondAttribute="trailing" id="66P-Ra-Xus"/>
-                            <constraint firstItem="AeH-9Z-VBq" firstAttribute="top" secondItem="Jg0-qz-vvD" secondAttribute="bottom" id="7gh-kD-x3D"/>
-                            <constraint firstItem="Jg0-qz-vvD" firstAttribute="top" secondItem="UAB-uQ-O3Q" secondAttribute="top" id="aln-aO-W7S"/>
                             <constraint firstItem="AeH-9Z-VBq" firstAttribute="leading" secondItem="UAB-uQ-O3Q" secondAttribute="leading" id="j0B-be-Gsg"/>
                             <constraint firstAttribute="bottom" secondItem="AeH-9Z-VBq" secondAttribute="bottom" id="wYF-nj-MCu"/>
-                            <constraint firstItem="AeH-9Z-VBq" firstAttribute="top" secondItem="Jg0-qz-vvD" secondAttribute="bottom" id="x2Z-cD-gDa"/>
-                            <constraint firstAttribute="trailing" secondItem="Jg0-qz-vvD" secondAttribute="trailing" id="zhU-jt-gZB"/>
                         </constraints>
                     </view>
                 </tableView>

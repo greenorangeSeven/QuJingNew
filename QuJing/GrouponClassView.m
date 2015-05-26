@@ -28,7 +28,7 @@
     
     UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 44)];
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
-    titleLabel.text = @"商家集市";
+    titleLabel.text = @"快送";
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.textAlignment = UITextAlignmentCenter;
@@ -262,7 +262,7 @@
         UserInfo *userInfo = [[UserModel Instance] getUserInfo];
         //生成获取广告URL
         NSMutableDictionary *param = [[NSMutableDictionary alloc] init];
-        [param setValue:@"1142357056821000" forKey:@"typeId"];
+        [param setValue:@"1143260585310200" forKey:@"typeId"];
         [param setValue:userInfo.defaultUserHouse.cellId forKey:@"cellId"];
         [param setValue:@"1" forKey:@"timeCon"];
         NSString *getADDataUrl = [Tool serializeURL:[NSString stringWithFormat:@"%@%@", api_base_url, api_findAdInfoList] params:param];

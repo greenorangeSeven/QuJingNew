@@ -410,6 +410,26 @@
 		14A849211A77C1AF0054D8BA /* ActivityPlayersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A8491F1A77C1AF0054D8BA /* ActivityPlayersView.xib */; };
 		14A849261A77C61A0054D8BA /* ActivityPlaysCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A849241A77C61A0054D8BA /* ActivityPlaysCell.m */; };
 		14A849271A77C61A0054D8BA /* ActivityPlaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A849251A77C61A0054D8BA /* ActivityPlaysCell.xib */; };
+		14A989CE1B14076500AF0D4A /* PropertyPageNewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989CC1B14076500AF0D4A /* PropertyPageNewView.m */; };
+		14A989CF1B14076500AF0D4A /* PropertyPageNewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989CD1B14076500AF0D4A /* PropertyPageNewView.xib */; };
+		14A989E81B14677500AF0D4A /* CircleOfFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989D41B14677500AF0D4A /* CircleOfFriendsCell.m */; };
+		14A989E91B14677500AF0D4A /* CircleOfFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989D51B14677500AF0D4A /* CircleOfFriendsCell.xib */; };
+		14A989EA1B14677500AF0D4A /* CircleOfFriendsImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989D71B14677500AF0D4A /* CircleOfFriendsImgCell.m */; };
+		14A989EB1B14677500AF0D4A /* CircleOfFriendsImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989D81B14677500AF0D4A /* CircleOfFriendsImgCell.xib */; };
+		14A989EC1B14677500AF0D4A /* CircleOfFriendsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989DA1B14677500AF0D4A /* CircleOfFriendsView.m */; };
+		14A989ED1B14677500AF0D4A /* CircleOfFriendsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989DB1B14677500AF0D4A /* CircleOfFriendsView.xib */; };
+		14A989EE1B14677500AF0D4A /* PopularityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989DD1B14677500AF0D4A /* PopularityView.m */; };
+		14A989EF1B14677500AF0D4A /* PopularityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989DE1B14677500AF0D4A /* PopularityView.xib */; };
+		14A989F01B14677500AF0D4A /* CircleOfFriendsFullCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989E01B14677500AF0D4A /* CircleOfFriendsFullCell.m */; };
+		14A989F11B14677500AF0D4A /* CircleOfFriendsFullCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989E11B14677500AF0D4A /* CircleOfFriendsFullCell.xib */; };
+		14A989F21B14677500AF0D4A /* CircleOfFriendsReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989E31B14677500AF0D4A /* CircleOfFriendsReplyCell.m */; };
+		14A989F31B14677500AF0D4A /* CircleOfFriendsReplyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989E41B14677500AF0D4A /* CircleOfFriendsReplyCell.xib */; };
+		14A989F41B14677500AF0D4A /* CircleOfFriendsPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989E61B14677500AF0D4A /* CircleOfFriendsPublishView.m */; };
+		14A989F51B14677500AF0D4A /* CircleOfFriendsPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A989E71B14677500AF0D4A /* CircleOfFriendsPublishView.xib */; };
+		14A989FE1B1468D500AF0D4A /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989F71B1468D500AF0D4A /* Topic.m */; };
+		14A989FF1B1468D500AF0D4A /* TopicFull.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989F91B1468D500AF0D4A /* TopicFull.m */; };
+		14A98A001B1468D500AF0D4A /* TopicReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989FB1B1468D500AF0D4A /* TopicReply.m */; };
+		14A98A011B1468D500AF0D4A /* TopicType.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A989FD1B1468D500AF0D4A /* TopicType.m */; };
 		14B8D3981A66A393000A58D1 /* SendExpressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B8D3961A66A393000A58D1 /* SendExpressView.m */; };
 		14B8D3991A66A393000A58D1 /* SendExpressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B8D3971A66A393000A58D1 /* SendExpressView.xib */; };
 		14B8D39E1A6760D1000A58D1 /* GatherSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B8D39C1A6760D1000A58D1 /* GatherSelectView.m */; };
@@ -450,6 +470,8 @@
 		14C6B46E1A6B8794004E4F10 /* ShopCarItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C6B46C1A6B8794004E4F10 /* ShopCarItemCell.xib */; };
 		14C6B4711A6B9FF8004E4F10 /* ShopCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C6B4701A6B9FF8004E4F10 /* ShopCar.m */; };
 		14C6B4741A6BA3C5004E4F10 /* ShopCarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C6B4731A6BA3C5004E4F10 /* ShopCarItem.m */; };
+		14C9BC9D1B14C7120049F097 /* CameraImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C9BC9B1B14C7120049F097 /* CameraImgCell.m */; };
+		14C9BC9E1B14C7120049F097 /* CameraImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C9BC9C1B14C7120049F097 /* CameraImgCell.xib */; };
 		14ED959A1A6E99F500EA9404 /* ConfirmationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ED95981A6E99F500EA9404 /* ConfirmationCell.m */; };
 		14ED959B1A6E99F500EA9404 /* ConfirmationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14ED95991A6E99F500EA9404 /* ConfirmationCell.xib */; };
 		14ED95A11A6F3B0A00EA9404 /* PayFeeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14ED959F1A6F3B0A00EA9404 /* PayFeeView.m */; };
@@ -1314,6 +1336,38 @@
 		14A849231A77C61A0054D8BA /* ActivityPlaysCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityPlaysCell.h; sourceTree = "<group>"; };
 		14A849241A77C61A0054D8BA /* ActivityPlaysCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityPlaysCell.m; sourceTree = "<group>"; };
 		14A849251A77C61A0054D8BA /* ActivityPlaysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityPlaysCell.xib; sourceTree = "<group>"; };
+		14A989CB1B14076500AF0D4A /* PropertyPageNewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyPageNewView.h; sourceTree = "<group>"; };
+		14A989CC1B14076500AF0D4A /* PropertyPageNewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyPageNewView.m; sourceTree = "<group>"; };
+		14A989CD1B14076500AF0D4A /* PropertyPageNewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyPageNewView.xib; sourceTree = "<group>"; };
+		14A989D31B14677500AF0D4A /* CircleOfFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOfFriendsCell.h; sourceTree = "<group>"; };
+		14A989D41B14677500AF0D4A /* CircleOfFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOfFriendsCell.m; sourceTree = "<group>"; };
+		14A989D51B14677500AF0D4A /* CircleOfFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleOfFriendsCell.xib; sourceTree = "<group>"; };
+		14A989D61B14677500AF0D4A /* CircleOfFriendsImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOfFriendsImgCell.h; sourceTree = "<group>"; };
+		14A989D71B14677500AF0D4A /* CircleOfFriendsImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOfFriendsImgCell.m; sourceTree = "<group>"; };
+		14A989D81B14677500AF0D4A /* CircleOfFriendsImgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleOfFriendsImgCell.xib; sourceTree = "<group>"; };
+		14A989D91B14677500AF0D4A /* CircleOfFriendsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOfFriendsView.h; sourceTree = "<group>"; };
+		14A989DA1B14677500AF0D4A /* CircleOfFriendsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOfFriendsView.m; sourceTree = "<group>"; };
+		14A989DB1B14677500AF0D4A /* CircleOfFriendsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleOfFriendsView.xib; sourceTree = "<group>"; };
+		14A989DC1B14677500AF0D4A /* PopularityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularityView.h; sourceTree = "<group>"; };
+		14A989DD1B14677500AF0D4A /* PopularityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularityView.m; sourceTree = "<group>"; };
+		14A989DE1B14677500AF0D4A /* PopularityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularityView.xib; sourceTree = "<group>"; };
+		14A989DF1B14677500AF0D4A /* CircleOfFriendsFullCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOfFriendsFullCell.h; sourceTree = "<group>"; };
+		14A989E01B14677500AF0D4A /* CircleOfFriendsFullCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOfFriendsFullCell.m; sourceTree = "<group>"; };
+		14A989E11B14677500AF0D4A /* CircleOfFriendsFullCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleOfFriendsFullCell.xib; sourceTree = "<group>"; };
+		14A989E21B14677500AF0D4A /* CircleOfFriendsReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOfFriendsReplyCell.h; sourceTree = "<group>"; };
+		14A989E31B14677500AF0D4A /* CircleOfFriendsReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOfFriendsReplyCell.m; sourceTree = "<group>"; };
+		14A989E41B14677500AF0D4A /* CircleOfFriendsReplyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleOfFriendsReplyCell.xib; sourceTree = "<group>"; };
+		14A989E51B14677500AF0D4A /* CircleOfFriendsPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleOfFriendsPublishView.h; sourceTree = "<group>"; };
+		14A989E61B14677500AF0D4A /* CircleOfFriendsPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleOfFriendsPublishView.m; sourceTree = "<group>"; };
+		14A989E71B14677500AF0D4A /* CircleOfFriendsPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleOfFriendsPublishView.xib; sourceTree = "<group>"; };
+		14A989F61B1468D500AF0D4A /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		14A989F71B1468D500AF0D4A /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		14A989F81B1468D500AF0D4A /* TopicFull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicFull.h; sourceTree = "<group>"; };
+		14A989F91B1468D500AF0D4A /* TopicFull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicFull.m; sourceTree = "<group>"; };
+		14A989FA1B1468D500AF0D4A /* TopicReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicReply.h; sourceTree = "<group>"; };
+		14A989FB1B1468D500AF0D4A /* TopicReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicReply.m; sourceTree = "<group>"; };
+		14A989FC1B1468D500AF0D4A /* TopicType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicType.h; sourceTree = "<group>"; };
+		14A989FD1B1468D500AF0D4A /* TopicType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicType.m; sourceTree = "<group>"; };
 		14B8D3951A66A393000A58D1 /* SendExpressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendExpressView.h; sourceTree = "<group>"; };
 		14B8D3961A66A393000A58D1 /* SendExpressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendExpressView.m; sourceTree = "<group>"; };
 		14B8D3971A66A393000A58D1 /* SendExpressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendExpressView.xib; sourceTree = "<group>"; };
@@ -1377,6 +1431,9 @@
 		14C6B4701A6B9FF8004E4F10 /* ShopCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCar.m; sourceTree = "<group>"; };
 		14C6B4721A6BA3C5004E4F10 /* ShopCarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarItem.h; sourceTree = "<group>"; };
 		14C6B4731A6BA3C5004E4F10 /* ShopCarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarItem.m; sourceTree = "<group>"; };
+		14C9BC9A1B14C7120049F097 /* CameraImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraImgCell.h; sourceTree = "<group>"; };
+		14C9BC9B1B14C7120049F097 /* CameraImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraImgCell.m; sourceTree = "<group>"; };
+		14C9BC9C1B14C7120049F097 /* CameraImgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraImgCell.xib; sourceTree = "<group>"; };
 		14ED95971A6E99F500EA9404 /* ConfirmationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationCell.h; sourceTree = "<group>"; };
 		14ED95981A6E99F500EA9404 /* ConfirmationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationCell.m; sourceTree = "<group>"; };
 		14ED95991A6E99F500EA9404 /* ConfirmationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmationCell.xib; sourceTree = "<group>"; };
@@ -1628,6 +1685,7 @@
 		0485D3541A7B5B6F0045763C /* FriendsPage */ = {
 			isa = PBXGroup;
 			children = (
+				14A989D21B14673500AF0D4A /* Topic */,
 				04B0F54B1A7B6029002ACAFB /* FriendsPageView.h */,
 				04B0F54C1A7B6029002ACAFB /* FriendsPageView.m */,
 				04B0F54D1A7B6029002ACAFB /* FriendsPageView.xib */,
@@ -2489,6 +2547,14 @@
 				045E92A21AEF55A70070E3FD /* News.m */,
 				148ABB531B12C1F500046D4A /* Trade.h */,
 				148ABB541B12C1F500046D4A /* Trade.m */,
+				14A989F61B1468D500AF0D4A /* Topic.h */,
+				14A989F71B1468D500AF0D4A /* Topic.m */,
+				14A989F81B1468D500AF0D4A /* TopicFull.h */,
+				14A989F91B1468D500AF0D4A /* TopicFull.m */,
+				14A989FA1B1468D500AF0D4A /* TopicReply.h */,
+				14A989FB1B1468D500AF0D4A /* TopicReply.m */,
+				14A989FC1B1468D500AF0D4A /* TopicType.h */,
+				14A989FD1B1468D500AF0D4A /* TopicType.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2884,6 +2950,9 @@
 				14A61AEC1A5C1C63000000AA /* PropertyPageView.h */,
 				14A61AED1A5C1C63000000AA /* PropertyPageView.m */,
 				14A61AEE1A5C1C63000000AA /* PropertyPageView.xib */,
+				14A989CB1B14076500AF0D4A /* PropertyPageNewView.h */,
+				14A989CC1B14076500AF0D4A /* PropertyPageNewView.m */,
+				14A989CD1B14076500AF0D4A /* PropertyPageNewView.xib */,
 				14ED959D1A6F3AE000EA9404 /* PayFee */,
 				1495D60C1A6369070059FB47 /* Suit */,
 				14476FBC1A5F763300CFF787 /* Repair */,
@@ -2922,6 +2991,37 @@
 				14A8490A1A75E98D0054D8BA /* KYPointAnnotation.m */,
 			);
 			name = Overview;
+			sourceTree = "<group>";
+		};
+		14A989D21B14673500AF0D4A /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				14A989D31B14677500AF0D4A /* CircleOfFriendsCell.h */,
+				14A989D41B14677500AF0D4A /* CircleOfFriendsCell.m */,
+				14A989D51B14677500AF0D4A /* CircleOfFriendsCell.xib */,
+				14A989D61B14677500AF0D4A /* CircleOfFriendsImgCell.h */,
+				14A989D71B14677500AF0D4A /* CircleOfFriendsImgCell.m */,
+				14A989D81B14677500AF0D4A /* CircleOfFriendsImgCell.xib */,
+				14A989D91B14677500AF0D4A /* CircleOfFriendsView.h */,
+				14A989DA1B14677500AF0D4A /* CircleOfFriendsView.m */,
+				14A989DB1B14677500AF0D4A /* CircleOfFriendsView.xib */,
+				14A989DC1B14677500AF0D4A /* PopularityView.h */,
+				14A989DD1B14677500AF0D4A /* PopularityView.m */,
+				14A989DE1B14677500AF0D4A /* PopularityView.xib */,
+				14A989DF1B14677500AF0D4A /* CircleOfFriendsFullCell.h */,
+				14A989E01B14677500AF0D4A /* CircleOfFriendsFullCell.m */,
+				14A989E11B14677500AF0D4A /* CircleOfFriendsFullCell.xib */,
+				14A989E21B14677500AF0D4A /* CircleOfFriendsReplyCell.h */,
+				14A989E31B14677500AF0D4A /* CircleOfFriendsReplyCell.m */,
+				14A989E41B14677500AF0D4A /* CircleOfFriendsReplyCell.xib */,
+				14A989E51B14677500AF0D4A /* CircleOfFriendsPublishView.h */,
+				14A989E61B14677500AF0D4A /* CircleOfFriendsPublishView.m */,
+				14A989E71B14677500AF0D4A /* CircleOfFriendsPublishView.xib */,
+				14C9BC9A1B14C7120049F097 /* CameraImgCell.h */,
+				14C9BC9B1B14C7120049F097 /* CameraImgCell.m */,
+				14C9BC9C1B14C7120049F097 /* CameraImgCell.xib */,
+			);
+			name = Topic;
 			sourceTree = "<group>";
 		};
 		14C427A21A621DFE004E919D /* RepairDetail */ = {
@@ -3121,6 +3221,7 @@
 				14C427DA1A625EB3004E919D /* RepairResultCell.xib in Resources */,
 				14B8D3AB1A679769000A58D1 /* HistoryExpressCell.xib in Resources */,
 				14867EF11A68EBFF004FFCA6 /* CommodityClassCell.xib in Resources */,
+				14A989EF1B14677500AF0D4A /* PopularityView.xib in Resources */,
 				148ABB4E1B12BDB500046D4A /* TradeListView.xib in Resources */,
 				04B0F5771A7B6029002ACAFB /* FriendsMyView.xib in Resources */,
 				14B8D3A61A6795A4000A58D1 /* HistoryExpressView.xib in Resources */,
@@ -3148,6 +3249,7 @@
 				1495D6791A6608150059FB47 /* cb_box_off@2x.png in Resources */,
 				14ED96681A721B2200EA9404 /* IntegralView.xib in Resources */,
 				143896D21A793330008B8E61 /* OrderCommodityCell.xib in Resources */,
+				14A989F51B14677500AF0D4A /* CircleOfFriendsPublishView.xib in Resources */,
 				04FE95151ADF462100DA797E /* GrouponClassView.xib in Resources */,
 				1454CE5D1A557E77003AA21E /* LoadingCell.xib in Resources */,
 				0405EF3B1A806D0E00D33A2B /* ConfirmationView.xib in Resources */,
@@ -3175,8 +3277,10 @@
 				14ED96771A72351000EA9404 /* MyCollectView.xib in Resources */,
 				14A013DD1A5BCDF60041FBE3 /* MainTabView.xib in Resources */,
 				1495D6891A6608150059FB47 /* cb_mono_off@2x.png in Resources */,
+				14A989E91B14677500AF0D4A /* CircleOfFriendsCell.xib in Resources */,
 				1495D6161A63742F0059FB47 /* MySuitTableView.xib in Resources */,
 				14A013D81A5B8CD40041FBE3 /* TransitionView.xib in Resources */,
+				14A989CF1B14076500AF0D4A /* PropertyPageNewView.xib in Resources */,
 				14B93DDC1A83098D00B9E51C /* OpinionView.xib in Resources */,
 				1495D6941A6609430059FB47 /* cd_my_on.png in Resources */,
 				14504B111A5CCC3F006B9EC7 /* ActivityTableView.xib in Resources */,
@@ -3223,6 +3327,7 @@
 				1495D6801A6608150059FB47 /* cb_glossy_off.png in Resources */,
 				1454CF4C1A581A82003AA21E /* RegisterStep2View.xib in Resources */,
 				04B0F57D1A7B6029002ACAFB /* FriendsFocusCell.xib in Resources */,
+				14A989ED1B14677500AF0D4A /* CircleOfFriendsView.xib in Resources */,
 				04FE95291ADF480F00DA797E /* GrouponCell.xib in Resources */,
 				148ABB7E1B1302BB00046D4A /* StoreMapPointView.xib in Resources */,
 				14A849161A7725F10054D8BA /* InviteRegisterView.xib in Resources */,
@@ -3237,6 +3342,7 @@
 				14B8D3991A66A393000A58D1 /* SendExpressView.xib in Resources */,
 				1495D6571A66038C0059FB47 /* ExpressFrameView.xib in Resources */,
 				148ABB521B12BDB500046D4A /* PublishTradeView.xib in Resources */,
+				14A989F31B14677500AF0D4A /* CircleOfFriendsReplyCell.xib in Resources */,
 				14C6B4631A6B8121004E4F10 /* ShopCarView.xib in Resources */,
 				045E929B1AEF16D70070E3FD /* CityCell.xib in Resources */,
 				1495D67A1A6608150059FB47 /* cb_box_on.png in Resources */,
@@ -3244,10 +3350,12 @@
 				04FE95241ADF47BA00DA797E /* GrouponView.xib in Resources */,
 				148ABB501B12BDB500046D4A /* TradeListCell.xib in Resources */,
 				1412F14F1A5D89C2005D1735 /* ActivityInitiateView.xib in Resources */,
+				14C9BC9E1B14C7120049F097 /* CameraImgCell.xib in Resources */,
 				14ED965D1A71ED8E00EA9404 /* PurseView.xib in Resources */,
 				148ABB4C1B12BDB500046D4A /* TradeFrameView.xib in Resources */,
 				1495D6881A6608150059FB47 /* cb_mono_off.png in Resources */,
 				148ABB831B13033C00046D4A /* LifeReferCell.xib in Resources */,
+				14A989EB1B14677500AF0D4A /* CircleOfFriendsImgCell.xib in Resources */,
 				1495D64A1A640DEE0059FB47 /* SuitReplyView.xib in Resources */,
 				14476FC61A5F7D8D00CFF787 /* RepairImageCell.xib in Resources */,
 				04FE952F1ADF48C800DA797E /* GrouponDetailView.xib in Resources */,
@@ -3257,6 +3365,7 @@
 				1495D6841A6608150059FB47 /* cb_green_off.png in Resources */,
 				045E929D1AEF16D70070E3FD /* CityDetailView.xib in Resources */,
 				04B0F5811A7B6029002ACAFB /* FriendsDetailView.xib in Resources */,
+				14A989F11B14677500AF0D4A /* CircleOfFriendsFullCell.xib in Resources */,
 				04FE951F1ADF469D00DA797E /* GrouponClassReusableView.xib in Resources */,
 				14ED95C11A70CEE200EA9404 /* InviteView.xib in Resources */,
 				14B8D3B01A67A16B000A58D1 /* CommentExpressView.xib in Resources */,
@@ -3289,6 +3398,7 @@
 				14C427D41A624BE5004E919D /* RepairResultView.m in Sources */,
 				1454CE5A1A557E77003AA21E /* EGORefreshTableHeaderView.m in Sources */,
 				1454CE6C1A557E77003AA21E /* FMDatabasePool.m in Sources */,
+				14A989F41B14677500AF0D4A /* CircleOfFriendsPublishView.m in Sources */,
 				1454CE4D1A557E77003AA21E /* CheckNetwork.m in Sources */,
 				1454CE551A557E77003AA21E /* EGOImageButton.m in Sources */,
 				14ED95BB1A70A68800EA9404 /* ResetPassWordView.m in Sources */,
@@ -3299,6 +3409,7 @@
 				0405EF2A1A806BA000D33A2B /* Jastor.m in Sources */,
 				1454CE931A557E77003AA21E /* UIButton+WebCache.m in Sources */,
 				1454CE311A557E77003AA21E /* AFURLConnectionOperation.m in Sources */,
+				14A989FE1B1468D500AF0D4A /* Topic.m in Sources */,
 				1454CE441A557E77003AA21E /* ASIWebPageRequest.m in Sources */,
 				14A61AEF1A5C1C63000000AA /* PropertyPageView.m in Sources */,
 				1454CE4C1A557E77003AA21E /* ASINetworkQueue.m in Sources */,
@@ -3338,6 +3449,7 @@
 				1454CE661A557E77003AA21E /* UIButton+TitleImage.m in Sources */,
 				04FE95251ADF47BA00DA797E /* GrouponView.m in Sources */,
 				1454CE271A557E77003AA21E /* NSData+CommonCrypto.m in Sources */,
+				14A989EE1B14677500AF0D4A /* PopularityView.m in Sources */,
 				1454CE8D1A557E77003AA21E /* SDWebImageCompat.m in Sources */,
 				148ABB861B1306C200046D4A /* ShopInfo.m in Sources */,
 				1454CE471A557E77003AA21E /* ASIDataDecompressor.m in Sources */,
@@ -3400,6 +3512,7 @@
 				14504B1C1A5CDEE8006B9EC7 /* Activity.m in Sources */,
 				14A848ED1A7531940054D8BA /* ChangePwdView.m in Sources */,
 				1454CE6B1A557E77003AA21E /* FMDatabaseAdditions.m in Sources */,
+				14C9BC9D1B14C7120049F097 /* CameraImgCell.m in Sources */,
 				1454CE801A557E77003AA21E /* PSTCollectionViewFlowLayout.m in Sources */,
 				0405EF3A1A806D0E00D33A2B /* ConfirmationView.m in Sources */,
 				14ED96671A721B2200EA9404 /* IntegralView.m in Sources */,
@@ -3435,6 +3548,7 @@
 				14A849001A75C6FC0054D8BA /* OverviewFrameView.m in Sources */,
 				1454CE451A557E77003AA21E /* ASIAuthenticationDialog.m in Sources */,
 				04B0F5701A7B6029002ACAFB /* FriendsTypeView.m in Sources */,
+				14A98A001B1468D500AF0D4A /* TopicReply.m in Sources */,
 				04F1556E1AE091CD00B63754 /* GrouponShopView.m in Sources */,
 				0405EF331A806BAB00D33A2B /* OrderShopVO.m in Sources */,
 				04FE95351ADF8AEE00DA797E /* ShopType.m in Sources */,
@@ -3483,11 +3597,13 @@
 				1454CEA51A557E77003AA21E /* ZJSwitch.m in Sources */,
 				14B8D39E1A6760D1000A58D1 /* GatherSelectView.m in Sources */,
 				1454CE671A557E77003AA21E /* UIDevice+Extensions.m in Sources */,
+				14A989EC1B14677500AF0D4A /* CircleOfFriendsView.m in Sources */,
 				1495D68D1A6608150059FB47 /* SSCheckBoxView.m in Sources */,
 				1454CE811A557E77003AA21E /* PSTCollectionViewItemKey.m in Sources */,
 				1454CE8A1A557E77003AA21E /* MKAnnotationView+WebCache.m in Sources */,
 				1454CE771A557E77003AA21E /* MWTapDetectingImageView.m in Sources */,
 				1495D6261A63B6D70059FB47 /* SuitDetailView.m in Sources */,
+				14A98A011B1468D500AF0D4A /* TopicType.m in Sources */,
 				14504B101A5CCC3F006B9EC7 /* ActivityTableView.m in Sources */,
 				1454CEB01A557FEC003AA21E /* Tool.m in Sources */,
 				14476FC51A5F7D8D00CFF787 /* RepairImageCell.m in Sources */,
@@ -3501,13 +3617,16 @@
 				14B8D3AA1A679769000A58D1 /* HistoryExpressCell.m in Sources */,
 				1454CE7A1A557E77003AA21E /* DACircularProgressView.m in Sources */,
 				0485D3851A7B5C0E0045763C /* FriendsList.m in Sources */,
+				14A989F01B14677500AF0D4A /* CircleOfFriendsFullCell.m in Sources */,
 				1495D63D1A63B7560059FB47 /* SuitBasicCell.m in Sources */,
 				14C427BA1A622329004E919D /* RepairFinish.m in Sources */,
+				14A989EA1B14677500AF0D4A /* CircleOfFriendsImgCell.m in Sources */,
 				04B0F56E1A7B6029002ACAFB /* FriendsPageView.m in Sources */,
 				0405EF231A806B4C00D33A2B /* RSADataSigner.m in Sources */,
 				14B8D3981A66A393000A58D1 /* SendExpressView.m in Sources */,
 				1454CEA21A557E77003AA21E /* StrikeThroughLabel.m in Sources */,
 				1454CE591A557E77003AA21E /* DataSingleton.m in Sources */,
+				14A989F21B14677500AF0D4A /* CircleOfFriendsReplyCell.m in Sources */,
 				148ABB4B1B12BDB500046D4A /* TradeFrameView.m in Sources */,
 				14ED95B11A6FE5E900EA9404 /* BillCell.m in Sources */,
 				0485D3871A7B5C0E0045763C /* FriendsReply.m in Sources */,
@@ -3532,11 +3651,14 @@
 				04B0F5781A7B6029002ACAFB /* FriendsOtherView.m in Sources */,
 				1454CE601A557E77003AA21E /* UITap.m in Sources */,
 				1495D6041A635DAA0059FB47 /* CommDetailView.m in Sources */,
+				14A989E81B14677500AF0D4A /* CircleOfFriendsCell.m in Sources */,
 				14867EEC1A68E840004FFCA6 /* CommodityClass.m in Sources */,
 				1454CE851A557E77003AA21E /* PSTGridLayoutItem.m in Sources */,
 				1454CE7E1A557E77003AA21E /* PSTCollectionViewController.m in Sources */,
 				1454CE9E1A557E77003AA21E /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
+				14A989CE1B14076500AF0D4A /* PropertyPageNewView.m in Sources */,
 				1495D63F1A63B7560059FB47 /* SuitReplyCell.m in Sources */,
+				14A989FF1B1468D500AF0D4A /* TopicFull.m in Sources */,
 				1454CF441A57EC68003AA21E /* RegisterStep1View.m in Sources */,
 				14ED95AC1A6FE24D00EA9404 /* Bill.m in Sources */,
 				04FE952A1ADF480F00DA797E /* GrouponCell.m in Sources */,

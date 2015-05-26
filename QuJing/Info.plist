@@ -29,7 +29,7 @@
 			<string>com.wuhan.XuChangLife.alipay</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>XuChangLifeAlipay</string>
+				<string>QuJingLifeAlipay</string>
 			</array>
 		</dict>
 		<dict>
@@ -37,7 +37,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>XuChangLife</string>
+				<string>QuJingLifeAlipay</string>
 			</array>
 		</dict>
 	</array>
