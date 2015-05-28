@@ -74,7 +74,7 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRz-Wp-dre">
                                     <rect key="frame" x="237" y="136" width="54" height="55"/>
-                                    <state key="normal" image="main_fwbx">
+                                    <state key="normal" image="main_bmhy">
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
@@ -164,7 +164,7 @@
         </view>
     </objects>
     <resources>
-        <image name="main_fwbx" width="54" height="55"/>
+        <image name="main_bmhy" width="54" height="55"/>
         <image name="main_jpts" width="54" height="55"/>
         <image name="main_kdjst" width="54" height="55"/>
         <image name="main_shjf" width="54" height="55"/>

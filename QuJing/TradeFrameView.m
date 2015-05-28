@@ -12,6 +12,9 @@
 #import "YRSideViewController.h"
 
 @interface TradeFrameView ()
+{
+    NSString *typeId;
+}
 
 @end
 
@@ -38,6 +41,7 @@
     [self.item3Btn setTitleColor:[Tool getColorForMain] forState:UIControlStateNormal];
     [self.item3Btn setBackgroundColor:[UIColor whiteColor]];
     
+    typeId = @"0";
     //下属控件初始化
     self.esjyView = [[TradeListView alloc] init];
     self.esjyView.typeId = @"0";
@@ -58,6 +62,7 @@
 {
     PublishTradeView *publishTrade = [[PublishTradeView alloc] init];
     publishTrade.parentView = self.view;
+    publishTrade.typeId = typeId;
     [self.navigationController pushViewController:publishTrade animated:YES];
 }
 
@@ -91,6 +96,7 @@
     [self.item3Btn setTitleColor:[Tool getColorForMain] forState:UIControlStateNormal];
     [self.item3Btn setBackgroundColor:[UIColor whiteColor]];
     if (self.fwcsView == nil) {
+        typeId = @"1";
         self.fwcsView = [[TradeListView alloc] init];
         self.fwcsView.typeId = @"1";
         self.fwcsView.typeName = @"房屋出租出售";
@@ -111,6 +117,7 @@
     [self.item3Btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.item3Btn setBackgroundColor:[Tool getColorForMain]];
     if (self.fwczView == nil) {
+        typeId = @"2";
         self.fwczView = [[TradeListView alloc] init];
         self.fwczView.typeId = @"2";
         self.fwczView.typeName = @"闲置物品交易";

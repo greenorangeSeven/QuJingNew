@@ -81,7 +81,7 @@
     [param setValue:phoneStr forKey:@"phone"];
     [param setValue:priceStr forKey:@"price"];
     [param setValue:userInfo.regUserId forKey:@"userId"];
-    [param setValue:@"0" forKey:@"typeId"];
+    [param setValue:self.typeId forKey:@"typeId"];
     NSString *addBusinessSign = [Tool serializeSign:[NSString stringWithFormat:@"%@%@", api_base_url, api_addBusinessInfoForApp] params:param];
     
     NSString *addBusinessUrl = [NSString stringWithFormat:@"%@%@", api_base_url, api_addBusinessInfoForApp];
@@ -96,7 +96,7 @@
     [request setPostValue:phoneStr forKey:@"phone"];
     [request setPostValue:priceStr forKey:@"price"];
     [request setPostValue:userInfo.regUserId forKey:@"userId"];
-    [request setPostValue:@"0" forKey:@"typeId"];
+    [request setPostValue:self.typeId forKey:@"typeId"];
     if (self.cameraImage != nil) {
         [request addData:UIImageJPEGRepresentation(self.cameraImage, 0.8f) withFileName:@"img.jpg" andContentType:@"image/jpeg" forKey:@"pic"];
     }

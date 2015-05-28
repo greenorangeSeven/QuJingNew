@@ -26,7 +26,7 @@
 			<key>CFBundleURLIconFile</key>
 			<string>cd_my_on@2x</string>
 			<key>CFBundleURLName</key>
-			<string>com.wuhan.XuChangLife.alipay</string>
+			<string>com.greenorange.QuJingLife.alipay</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>QuJingLifeAlipay</string>

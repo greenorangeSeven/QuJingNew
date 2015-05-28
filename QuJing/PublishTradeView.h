@@ -13,6 +13,8 @@
 @property (weak, nonatomic) UIView *parentView;
 @property (weak, nonatomic) UIImage *cameraImage;
 
+@property (copy, nonatomic) NSString *typeId;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UITextField *titleTf;
 @property (weak, nonatomic) IBOutlet UITextField *priceTf;

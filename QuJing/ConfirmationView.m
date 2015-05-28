@@ -17,6 +17,9 @@
 #import "FMDatabase.h"
 #import "FMDatabaseAdditions.h"
 #import "FMDatabaseQueue.h"
+#import "AppDelegate.h"
+#import "MainTabView.h"
+#import "LeftView.h"
 
 @interface ConfirmationView ()
 {
@@ -32,13 +35,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 44)];
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 80, 44)];
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
     titleLabel.text = @"订单确认";
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = titleLabel;
+    
+    UIButton *leftBtn = [[UIButton alloc]initWithFrame:CGRectMake(-5, 0, 57, 30)];
+    [leftBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [leftBtn setImage:[UIImage imageNamed:@"head_back"] forState:UIControlStateNormal];
+    [leftBtn setImage:[UIImage imageNamed:@"head_back"] forState:UIControlStateHighlighted];
+    UIBarButtonItem *btnBack = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];
+    
+    UIBarButtonItem *left2Btn = [[UIBarButtonItem alloc]
+                           initWithTitle:@"首页"
+                           style:UIBarButtonItemStylePlain
+                           target:self
+                           action:@selector(goMainPage)];
+    
+    NSArray *buttonArray = [[NSArray alloc]initWithObjects:btnBack,left2Btn, nil];
+    self.navigationItem.leftBarButtonItems = buttonArray;
     
     userInfo = [[UserModel Instance] getUserInfo];
     self.recipientsTf.text = userInfo.regUserName;
@@ -51,6 +69,16 @@
     self.tableView.backgroundColor = [UIColor clearColor];
     //    设置无分割线
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
+- (void)backAction
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)goMainPage
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)refreshTotal
